@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "brain-games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iJoise/frontend-project-lvl1.git"
+  },
+  "author": "Kirill Kondratev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iJoise/frontend-project-lvl1/issues"
+  },
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
