@@ -10,12 +10,14 @@ const getRandomInt = (max) => {
    return Math.floor(Math.random() * Math.floor(max));
 };
 
+const roundCount = 3;
+
 const isEven = (num) => num % 2 === 0;
 
 const brainIsEven = () => {
    console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
    let count = 0;
-   for (let i = 0; i < 3; i += 1) {
+   for (let i = 0; i < roundCount; i += 1) {
       let random = getRandomInt(100);
       console.log(`Question: ${random}`);
       let ansver = readlineSync.question("Your answer: ");
