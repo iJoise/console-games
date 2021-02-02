@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import {greating }from "../src/cli.js";
+import {userName }from "../src/cli.js";
 
-greating();
+userName;
