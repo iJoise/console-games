@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-import { userName } from "../src/cli.js";
+import * as say from "../src/cli.js";
 import readlineSync from "readline-sync";
 
-userName;
+say.greating;
+say.userName;
+say.hello;
 
 const getRandomInt = (max) => {
    return Math.floor(Math.random() * Math.floor(max));
@@ -11,7 +13,7 @@ const getRandomInt = (max) => {
 const commonDivisor = () => {
    console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
    let count = 0;
-   for (let i = 0; i < 4; i += 0) {
+   for (let i = 0; i < 3; i += 0) {
       let random = getRandomInt(100);
       console.log(`Question: ${random}`);
       let oneQuestion = readlineSync.question("Your answer: ");
@@ -20,7 +22,7 @@ const commonDivisor = () => {
             console.log("Correct!");
             count += 1;
          } else {
-            console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
+            console.log(`'${oneQuestion}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${say.userName}!`);
             break;
          }
       }
@@ -29,12 +31,12 @@ const commonDivisor = () => {
             console.log("Correct!");
             count += 1;
          } else {
-            console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+            console.log(`'${oneQuestion}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${say.userName}!`);
             break;
          }
       }
       if (count === 3) {
-         console.log(`Congratulations, ${userName}!`);
+         console.log(`Congratulations, ${say.userName}!`);
          break;
       }
    }

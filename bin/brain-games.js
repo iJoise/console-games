@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import {userName }from "../src/cli.js";
-
-userName;
+import * as say from "../src/cli.js";
+say.greating;
+say.userName;
+say.hello;
